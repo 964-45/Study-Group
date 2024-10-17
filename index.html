@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Group</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Group</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">Study Group</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Icon -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sections for Navigation -->
+    <section id="home">
+        <h2>Welcome to Our Study Group</h2>
+        <p>Explore our resources and join us for collaborative learning!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a group of students who come together to study various subjects in a collaborative environment.</p>
+    </section>
+
+    <section id="schedule">
+        <h2>Study Schedule</h2>
+        <p>Check out our weekly study schedule for different subjects!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us;919641286094</h2>
+        <p>Want to join? Contact us using the form below!</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<body>
+    <header>
+        <h1>Welcome to Our Study Group</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Our Group</h2>
+        <p>We are a group of students dedicated to collaborative learning. Join us for regular study sessions and improve your knowledge with like-minded peers.</p>
+    </section>
+    <h2><p>A study group typically focuses on collaborative learning, where individuals gather to enhance their understanding of a subject through discussion, problem-solving, and sharing knowledge. Here are the primary elements that a study group might focus on:
+
+      1. Collaborative Learning:
+      Group discussions on complex topics help clarify doubts and fill knowledge gaps.
+      Students exchange ideas, perspectives, and approaches to subjects like mathematics, science, literature, etc.
+      2. Sharing Resources:
+      Group members share study materials like notes, textbooks, articles, and online resources.
+      Some groups may invite subject matter experts to give brief presentations or explanations.
+      3. Problem Solving:
+      Working together to solve challenging problems in subjects such as algebra, physics, or chemistry.
+      Each member can contribute different methods and ideas to tackle problems.
+      4. Accountability and Motivation:
+      Members hold each other accountable for completing assignments or preparation for exams.
+      Regular meetings and group sessions help keep members motivated and on track with their study plans.
+      5. Exam Preparation:
+      Study groups are often formed to prepare for exams. Members help each other revise, quiz each other, and work on past exam papers.
+      6. Topic Breakdown:
+      For difficult subjects like mathematics or sciences, study groups break down large topics into smaller, manageable chunks for easier comprehension.
+      Humanities or languages might involve discussions, debates, or analysis of reading materials.
+      Would you like to integrate a study overview into your website or add more detailed subject breakdowns in your study schedule?
+      
+      
+      
+      
+      
+      
+      </p></h2>
+
+    <section id="schedule">
+        <h2>Study Schedule</h2>
+
+        <!-- Dropdown for Subject Categories -->
+        <label for="category">Select Category:</label>
+        <select id="category" onchange="filterCategory()">
+            <option value="all">All Subjects</option>
+            <option value="science">Science</option>
+            <option value="math">Math</option>
+            <option value="languages">Languages</option>
+            <option value="arts">Arts</option>
+        </select>
+
+        <!-- Schedule Table with Categories -->
+        <table id="scheduleTable">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Time</th>
+                    <th>Category</th>
+                    <th>Subject</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Science -->
+                <tr data-category="science">
+                    <td>Monday</td>
+                    <td>5:00 PM - 7:00 PM</td>
+                    <td>Science</td>
+                    <td>Physics</td>
+                </tr>
+                <tr data-category="science">
+                    <td>Tuesday</td>
+                    <td>6:00 PM - 8:00 PM</td>
+                    <td>Science</td>
+                    <td>Chemistry</td>
+                </tr>
+
+                <!-- Math -->
+                <tr data-category="math">
+                    <td>Wednesday</td>
+                    <td>4:00 PM - 6:00 PM</td>
+                    <td>Math</td>
+                    <td>Algebra</td>
+                </tr>
+                <tr data-category="math">
+                    <td>Thursday</td>
+                    <td>6:00 PM - 8:00 PM</td>
+                    <td>Math</td>
+                    <td>Calculus</td>
+                </tr>
+
+                <!-- Languages -->
+                <tr data-category="languages">
+                    <td>Friday</td>
+                    <td>5:00 PM - 7:00 PM</td>
+                    <td>Languages</td>
+                    <td>English</td>
+                </tr>
+                <tr data-category="languages">
+                    <td>Saturday</td>
+                    <td>3:00 PM - 5:00 PM</td>
+                    <td>Languages</td>
+                    <td>Spanish</td>
+                </tr>
+
+                <!-- Arts -->
+                <tr data-category="arts">
+                    <td>Sunday</td>
+                    <td>2:00 PM - 4:00 PM</td>
+                    <td>Arts</td>
+                    <td>Painting</td>
+                </tr>
+                <tr data-category="arts">
+                    <td>Sunday</td>
+                    <td>4:30 PM - 6:30 PM</td>
+                    <td>Arts</td>
+                    <td>Music Theory</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Study Group © 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<link rel="stylesheet" href="first.css">
+<link rel="stylesheet" href="test.js">
+</html>
