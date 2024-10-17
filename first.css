@@ -1,0 +1,122 @@
+/* Dropdown styling */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0073e6;
+    padding: 15px 20px;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Mobile Menu Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    margin: 4px;
+    transition: 0.3s;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #0073e6;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* When mobile menu is clicked */
+.navbar.active .nav-links {
+    display: flex;
+}
+
+label {
+    font-weight: bold;
+    color: #543ed1;
+}
+
+select {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    color: #543ed1;
+}
+
+/* Hide schedule rows by default (JavaScript will handle showing the right ones) */
+tr[data-category] {
+    display: table-row;
+    color: aqua;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: blue;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: chocolate;
+}
